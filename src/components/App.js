@@ -22,7 +22,10 @@ const App = () => {
     <div>
         {/* Do not remove the main div */}
         <button onClick={displayModal}>Show Modal</button>
+        { show ? 
         <Modal show={show} onClose={onClose}/>
+        : ""
+        }
     </div>
   )
 }
