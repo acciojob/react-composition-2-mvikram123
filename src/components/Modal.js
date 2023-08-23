@@ -7,7 +7,7 @@ const Modal=({onClose,show})=>{
 
 
     return(
-    <div onCLick={onClose}>        
+    <div onClick={onClose} className="full">        
     { show== true ? 
             <div className="model-overlay">
                  <button className="model-close" onClick={onClose}>Close</button>
